@@ -8,6 +8,7 @@ export default defineGkdApp({
       key: 0,
       name: '分段广告-朋友圈广告',
       desc: '点击卡片广告右上角,直接关闭/出现菜单,确认关闭',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       activityIds: [
         'com.tencent.mm.plugin.sns.ui.SnsTimeLineUI',
         'com.tencent.mm.plugin.sns.ui.improve.ImproveSnsTimelineUI',
@@ -140,6 +141,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-电脑微信快捷自动登录',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -161,6 +163,7 @@ export default defineGkdApp({
       key: 2,
       name: '功能类-自动授权登录',
       desc: '自动允许使用头像昵称等',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -183,6 +186,7 @@ export default defineGkdApp({
     {
       key: 4,
       name: '功能类-微信读书网页版扫码登录自动授权',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       matchTime: 10000,
       actionMaximum: 1,
       activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
@@ -205,6 +209,7 @@ export default defineGkdApp({
       key: 5,
       name: '功能类-自动领取微信红包',
       desc: '自动领取私聊红包,群聊红包',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       rules: [
         {
@@ -244,6 +249,7 @@ export default defineGkdApp({
       key: 7,
       name: '功能类-自动选中发送原图',
       desc: '自动选中底部中间的发送原图，可手动取消勾选',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       actionMaximum: 1,
       activityIds: [
         'com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI',
@@ -281,6 +287,7 @@ export default defineGkdApp({
       key: 9,
       name: '功能类-自动查看原图',
       desc: '自动点击底部左侧[查看原图]按钮',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       activityIds: ['.ui.chatting.gallery.ImageGalleryUI', '.ui.LauncherUI'],
       rules: [
         {
@@ -308,6 +315,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '开屏广告-微信小程序',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       matchTime: 10000,
       forcedTime: 10000,
@@ -336,6 +344,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '功能类-网页版文件传输助手扫码自动授权',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -350,6 +359,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '青少年模式',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -371,6 +381,7 @@ export default defineGkdApp({
       key: 18,
       name: '功能类-青少年模式自动点击验证密码',
       desc: '点击“验证密码”以申请临时访问',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -393,6 +404,7 @@ export default defineGkdApp({
     {
       key: 19,
       name: '功能类-订阅号-展开更早的消息',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           key: 0,
@@ -413,6 +425,7 @@ export default defineGkdApp({
       key: 22,
       name: '功能类-开启青少年模式后的每日验证',
       desc: '点击"验证密码"',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           activityIds: 'com.tencent.mm.plugin.webview.ui.tools.MMWebViewUI',
@@ -426,6 +439,7 @@ export default defineGkdApp({
       key: 25,
       name: '局部广告-订阅号消息-推荐文章',
       desc: '点击关闭',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           activityIds:
@@ -439,6 +453,7 @@ export default defineGkdApp({
     {
       key: 26,
       name: '功能类-付款后自动点击完成/返回商家',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           fastQuery: true,
@@ -459,6 +474,7 @@ export default defineGkdApp({
       key: 28,
       name: '分段广告-订阅号消息-视频推荐',
       desc: '点击[X]-点击[不喜欢此类视频]-点击[确定]',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
       rules: [
@@ -495,6 +511,7 @@ export default defineGkdApp({
       key: 29,
       name: '功能类-解锁 Windows 微信',
       desc: '点击[解锁]',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           fastQuery: true,
@@ -510,6 +527,7 @@ export default defineGkdApp({
       key: 30,
       name: '全屏广告-文档页面-腾讯文档APP弹窗',
       desc: '点击关闭',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           fastQuery: true,
@@ -526,6 +544,7 @@ export default defineGkdApp({
       key: 31,
       name: '分段广告-订阅号消息-推荐阅读',
       desc: '点击关闭',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       activityIds:
         'com.tencent.mm.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
       rules: [
@@ -555,6 +574,7 @@ export default defineGkdApp({
       key: 32,
       name: '权限提示-权限申请弹窗',
       desc: '点击取消',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -572,6 +592,7 @@ export default defineGkdApp({
     {
       key: 34,
       name: '功能类-付款时自动点击[支付]',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       fastQuery: true,
       actionMaximum: 1,
       activityIds: 'com.tencent.mm.framework.app.UIPageFragmentActivity',
@@ -592,6 +613,7 @@ export default defineGkdApp({
       key: 35,
       name: '分段广告-订阅号消息内容-广告',
       desc: '点击下拉框-[关闭此广告]/[不感兴趣]-[与我无关]',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       activityIds: [
         '.plugin.brandservice.ui.timeline.preload.ui.TmplWebView', //调整为TmplWebView, 同时兼容多种ID
         '.plugin.webview.ui.tools.fts.MMSosWebViewUI',
@@ -671,6 +693,7 @@ export default defineGkdApp({
     {
       key: 36,
       name: '功能类-自动点击[查看原视频]',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           fastQuery: true,
@@ -685,6 +708,7 @@ export default defineGkdApp({
       key: 37,
       name: '全屏广告-小程序弹窗广告',
       desc: '点击关闭',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       matchTime: 20000,
       // actionMaximum: 1,
       actionCd: 300, // 有时候需要点击多次
@@ -710,6 +734,7 @@ export default defineGkdApp({
       key: 38,
       name: '功能类-自动语音转文字',
       desc: '点击语音旁边的转文字/长按语音后点击转文字',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           fastQuery: true,
@@ -725,6 +750,7 @@ export default defineGkdApp({
     {
       key: 39,
       name: '功能类-语音通话呼入10秒后自动点击接听',
+      excludeVersionNames: '8.0.56', // https://github.com/AIsouler/GKD_subscription/issues/716
       rules: [
         {
           matchTime: 15000,
